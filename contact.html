@@ -16,10 +16,68 @@
 </nav>
 
 <main>
-    <section>
-        <h2>Formulaire de contact</h2>
-        <p>Email : contact@afritalent.com</p>
-        <p>Téléphone : +221 XX XXX XX XX</p>
+    <section class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+
+                <div class="card shadow border-0">
+                    <div class="card-body p-4">
+
+                        <h2 class="text-center mb-4">Contactez AfriTalent</h2>
+                        <p class="text-center text-muted mb-4">
+                            Besoin d'un freelance ou d'une information ? Envoyez-nous un message.
+                        </p>
+
+                        <form>
+
+                            <div class="mb-3">
+                                <label for="nom" class="form-label">Nom complet</label>
+                                <input type="text" class="form-control" id="nom"
+                                    placeholder="Votre nom complet" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Adresse e-mail</label>
+                                <input type="email" class="form-control" id="email"
+                                    placeholder="exemple@email.com" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="telephone" class="form-label">Téléphone</label>
+                                <input type="tel" class="form-control" id="telephone"
+                                    placeholder="+221 XX XXX XX XX">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="service" class="form-label">Service recherché</label>
+                                <select class="form-select" id="service">
+                                    <option selected disabled>Choisissez un service</option>
+                                    <option>Développement Web</option>
+                                    <option>Design UI/UX</option>
+                                    <option>Rédaction SEO</option>
+                                    <option>Marketing Digital</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5"
+                                    placeholder="Décrivez votre besoin..." required></textarea>
+                            </div>
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    Envoyer le message
+                                </button>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 </main>
 

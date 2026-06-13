@@ -1,0 +1,140 @@
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #198754;
+    --dark-color: #212529;
+    --light-color: #f8f9fa;
+    --text-color: #333333;
+    --white-color: #ffffff;
+
+    --font-title: 'Poppins', sans-serif;
+    --font-text: 'Roboto', sans-serif;
+
+    --spacing-sm: 10px;
+    --spacing-md: 20px;
+    --spacing-lg: 40px;
+
+    --border-radius: 10px;
+}
+
+/* =========================
+   RESET CSS
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   STYLES GÉNÉRAUX
+========================= */
+body {
+    font-family: var(--font-text);
+    background-color: var(--light-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--font-title);
+    color: var(--dark-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    background-color: var(--dark-color) !important;
+    padding: var(--spacing-sm) 0;
+}
+
+.navbar-brand {
+    font-family: var(--font-title);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--white-color) !important;
+}
+
+.navbar-nav {
+    gap: 15px;
+}
+
+.nav-link {
+    color: var(--white-color) !important;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+/* =========================
+   MAIN
+========================= */
+main {
+    min-height: 70vh;
+    padding: var(--spacing-lg) 0;
+}
+
+/* =========================
+   CARTES FREELANCES
+========================= */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-md);
+}
+
+.card {
+    width: 280px;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
+    background-color: var(--white-color);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.name {
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.skill {
+    color: var(--secondary-color);
+    margin: 10px 0;
+}
+
+.price {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: var(--spacing-md);
+}
